@@ -4,6 +4,47 @@
 <div style="text-align: center;"><h1>Deferred Acceptance Algorithm</h1></div>
 <hr/>
 
+
+<h2 id="deferredAcceptanceAlgorithm">Deferred Acceptance Algorithm</h2>
         <p>
-            This is a test.
+        <div class="bordered">
+            <b id="alg">Algorithm:</b>
+            <br>
+            Men and women rank all potential partners.
+<!--?    TODO: add links that explain acceptability-->
+            <ol>
+                <li>Each man proposes to the highest ranked acceptable woman on his list, or to nobody if no one the list is acceptable.</li>
+                <li>Each woman holds only her most preferred acceptable proposal and rejects all others.</li>
+                <li>Each $m$ who is rejected by a woman removes her from his list.</li>
+                <li>If any man $m$ is rejected, return to step 1.</li>
+                <li>If no man is rejected, then each woman "accepts" her offer and is matched to the man whose proposal she holds.</li>
+            </ol>
+            <br>
+            This is the <b>"man-proposing"</b> deferred acceptance algorithm; there is also a <b>"woman-proposing"</b> version.
+        </div>
         </p>
+
+
+<p>
+% include('chapters/part1_/deferred_acceptance_alg/daa.html')
+</p>
+
+<h2 id="existence">Stable matchings exist</h2>
+<p>
+        <div class="bordered">
+            <b id="alg">Theorem:</b>
+            <br>
+    The deferred acceptance algorithm ends in finite time with a stable matching. (In particular, a stable matching exists).
+        </div>
+        </p>
+
+<p>
+	<div class="purpleBox">
+	<b>Proof:</b><br/>
+    The algorithm must end in a finite number of rounds. Suppose $m$ and $w$ are matched. Each must be acceptable to the other. (Why?) There is no blocking pair $(m, w')$ because if $m$ prefers $w'$ to $w$, then (1) at some time, $m$ <i>had</i> proposed to $w'$ and she eventually rejected him. Either $m$ is unacceptable to $w'$ or she then held a man she preferred to $m$. At every later round, $w'$ held the same man or some more preferred one, so $w'$ prefers her final match to $m$. Therefore, there are <b><i>NO BLOCKING PAIRS</i></b>. $\blacksquare$
+    </div>
+<p>
+
+
+
+

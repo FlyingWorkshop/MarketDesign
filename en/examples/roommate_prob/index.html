@@ -196,11 +196,11 @@
 <li><p href="{pathToLang}part1_">Part 1: Matching Theory</p></li>
 <li>
 <a id=sidebar-two_sided_matching href="../../part1_/two_sided_matching">Two-Sided Matching</a>
-<a id=sidebar-stability href="../../part1_/stability">Stability</a>
 <a id=sidebar-deferred_acceptance_alg href="../../part1_/deferred_acceptance_alg">Deferred Acceptance Algorithm</a>
-<a id=sidebar-optimal_stable_matchings href="../../part1_/optimal_stable_matchings">Optimal Stable Matchings</a>
-<a id=sidebar-pessimal_stable_matchings href="../../part1_/pessimal_stable_matchings">Pessimal Stable Matchings</a>
+<a id=sidebar-optimality href="../../part1_/optimality">Optimality</a>
 <a id=sidebar-decentralized_market href="../../part1_/decentralized_market">Decentralized Market</a>
+<a id=sidebar-rural_hospitals href="../../part1_/rural_hospitals">Rural Hospitals Theorem</a>
+<a id=sidebar-game_theory_rvw href="../../part1_/game_theory_rvw">Game Theory Review</a>
 
 <li>
     <a href="#part1__examples" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle show">Worked Examples</a>
@@ -370,6 +370,19 @@
  
 <center><h1>Roommate Problem</h1></center>
 <hr/>
+
+<h2>Problem</h2>
+    <p>
+        In this section, we explore one category matching. Suppose a group of students will be matched to roommates, two in each room.
+        We consider four students:
+        <ul>
+    <li>$A$ prefers $B \succ C \succ D$</li>
+    <li>$B$ prefers $C \succ A \succ D$</li>
+    <li>$C$ prefers $A \succ B \succ D$</li>
+</ul>
+        Then <b><i>no stable matching exists</i></b>: whoever is paired with $D$ wants to change and can find a willing partner, so the existence of a stable matching is not trivial, even if each match inovlves just two people.
+    </p>
+
 
 
                         

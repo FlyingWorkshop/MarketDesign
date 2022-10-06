@@ -11,11 +11,11 @@
 		"title":"Part 1: Matching Theory",
 		"sections": {
 			"two_sided_matching":"Two-Sided Matching",
-			"stability": "Stability",
 			"deferred_acceptance_alg": "Deferred Acceptance Algorithm",
-			"optimal_stable_matchings": "Optimal Stable Matchings",
-			"pessimal_stable_matchings": "Pessimal Stable Matchings",
-			"decentralized_market": "Decentralized Market"
+			"optimality": "Optimality",
+			"decentralized_market": "Decentralized Market",
+			"rural_hospitals": "Rural Hospitals Theorem",
+			"game_theory_rvw": "Game Theory Review"
 		},
 		"examples": {
 			"law_clerk":"Law Clerks",

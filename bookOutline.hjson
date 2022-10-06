@@ -10,6 +10,21 @@
 			# "prob_code": "Probability in Code"
 		}
 	},
+	"part1_": {
+		"title":"Part 1: Matching Theory",
+		"sections": {
+			"two_sided_matching":"Two-Sided Matching",
+			"stability": "Stability",
+			"deferred_acceptance_alg": "Deferred Acceptance Algorithm",
+			"optimal_stable_matchings": "Optimal Stable Matchings",
+			"pessimal_stable_matchings": "Pessimal Stable Matchings",
+			"decentralized_market": "Decentralized Market"
+		},
+		"examples": {
+			"law_clerk":"Law Clerks",
+			"roommate_prob": "Roommate Problem"
+		}
+    },
 	"part1": {
 		"title":"Part 1: Core Probability",
 		"sections": {

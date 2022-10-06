@@ -1,0 +1,51 @@
+
+% rebase('templates/chapter.html', title="Two-Sided Matching")
+ 
+<center><h1>Two-Sided Matching</h1></center>
+<hr/>
+
+
+<h2 id="probStatement">Problem Statement</h2>
+
+        <ul>
+            <li>Two different kinds of parties to be matched.</li>
+            <li>Participants of both kinds care about to whom they are matched.</li>
+            <li>Money and prices cannot be used to guide the match.</li>
+        </ul>
+
+<h2 id="marriageModel">Marriage Model</h2>
+<!--?TODO: include a citation for Gayle & Shapley (1962)-->
+        <b>Participants of Two Kinds:</b>
+        <p>
+            We have a set of men $M$, with typical man $m \in M$ and a set of women $W$, with typical woman $w \in W$. We assume one-to-one matching. Each man can be matched to one woman or remain unmatched. Each woman $\ldots$
+        </p>
+
+        <b>Preferences:</b>
+        <p>
+            Each woman has strict preferences over men, and vice versa. A woman $w$ is "acceptable" to $m$ if $m$ prefers $w$ to being unmatched. Similarly, a man $m$ is "acceptable" to $w$ if $\ldots$
+        </p>
+
+<p>
+<div class="bordered">
+    <b id="matching">Definition: Matching</b>
+    <br>
+    A matching is a set of pairs of the form $(m, w)$ of self-matching $(m, m)$ or $(w, w)$ such that each individual appears in exactly one pair.
+    <br>
+    <b>Notation:</b> If the match includes $(m, m)$, then $m$ is unmatched. Similarly, if $\ldots (w, w) \ldots$ then $w$ is unmatched.
+</div>
+</p>
+
+<p>
+<div class="bordered">
+    <b id="stability">Definition: Stability</b>
+    <br>
+    A matching is unstable if either
+    <ul>
+        <li>Some individual is matched to an unacceptable partner, or</li>
+        <li>There is a blocking pair $(m, w)$—that is, a man $m$ and a woman $w$ who would both prefer to match with each other rather than to their assigned partners.</li>
+    </ul>
+    <br>
+    <b>Notation:</b> If the match includes $(m, m)$, then $m$ is unmatched. Similarly, if $\ldots (w, w) \ldots$ then $w$ is unmatched.
+</div>
+</p>
+

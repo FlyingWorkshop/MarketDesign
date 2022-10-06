@@ -2,12 +2,9 @@
 	"intro": {
 		"title":null,
 		"sections": {
-			# "intro":"Introduction",
-			# "free_book":"A Free Online Textbook",
 			"notation": "Notation Reference",
 			"all_distributions":"Random Variable Reference",
 			"calculators": "Calculators",
-			# "prob_code": "Probability in Code"
 		}
 	},
 	"part1_": {
@@ -131,32 +128,5 @@
 			"mle_demo":"MLE Normal Demo",
 			"mixture_models":"MLE Mixture Model",
 		}
-	},
-	# "examples": {
-	# 	"title":"Examples",
-	# 	"sections": {
-			
-	# 		"prob_baby_delivery":"Probability of Baby Delivery",
-	# 		"fast_dot_com":"Fast.com",
-	# 		"greenhouse_effect":"Greenhouse Effect",
-	# 		"bridge_distribution":"Bridge Distribution",
-	# 		"curse_of_dimensionality":"Curse of Dimensionality",
-	# 		"period_tracker":"Period Tracker",
-	# 		"fairness":"Fairness",
-	# 		"climate_sensitivity":"Climate Sensitivity",
-	# 		"age_given_names":"Age Given Name",
-	# 		"grades_not_normal":"Grades are Not Normal"
-	# 	}
-	# }
-	# TODO: Mehran to add as he sees fit
-	# "part6":{
-	# 	"title":"Part 6: Intro to Information Theory",
-	# 	"sections": {
-	# 		"entropy":"Maximum Likelihood Estimation",
-	#		"cross_entopy":"Cross Entropy",
-	# 		"kl_divergence":"KL Divergence",
-	# 	}
-	# }
-
-	# COOL EXTRA Examples Ranked Choice Voting
+	}
 }

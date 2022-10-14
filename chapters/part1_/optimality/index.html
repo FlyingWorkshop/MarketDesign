@@ -1,0 +1,60 @@
+
+% rebase('templates/chapter.html', title="Optimality")
+ 
+<center><h1>Optimality</h1></center>
+<hr/>
+
+<h2>Optimal Stable Matchings</h2>
+
+<p>
+<div class="bordered">
+    <b id="alg">Definition:</b>
+    <br>
+A stable matching is <i>man-optimal</i> if every man prefers his partner to any partner he could possibly have in any stable matching.
+</div>
+</p>
+
+<p>
+<div class="bordered">
+    <b id="alg">Theorem:</b>
+    <br>
+    The man-proposing DA algorithm results in a man-optimal stable matching.
+    <br>
+    <it>Note: The same resul holds for woman-proposing DA with everything flipped.</it>
+</div>
+</p>
+        <p>
+            <div class="purpleBox">
+    <b>Proof:</b><br>
+    Say that $w$ is <b><i>possible</i></b> for $m$ if $(m, w)$ is in some stable matching. Show <i>by induction</i> that no man is ever rejected by a woman who is possible for him. True at round 0. Suppose this is the case through round $n$ of the algorithm. Suppose at round $n+1$, woman $w$ rejects $m$ in favor of $m'$. Note, this means $m'$ made an offer to $w$ in round $n+1$ and hence all the women whom $m'$ prefers to $w$ have rejected him and so, by the inductive hypothesis, must be impossible for him. We claim that $w$ must be <i> impossible</i> for $m$. Suppose to the contrary that $w$ is possible for $m$ and consider the stable matching $X$ that includes $(m, w)$ and $(m', w')$ for some $w'$. By the inductive hypothesis, $m'$ must prefer $w$ to $w'$. But then $(m', w)$ blocks $X$, so $X$ is not stable. So in no round of the man-proposing DA is any man rejected by a possible woman. $\blacksquare$
+</div>
+        </p>
+        <h2>Pessimal Stable Matchings</h2>
+        <p><div class="bordered">
+    <b>Definition:</b><br>A stable matching $X$ is <i>woman-pessimal</i> if every woman prefers her partner at every otehr stable matching to her partner at $X$.
+</div></p>
+        <p>
+            <div class="bordered"><b>Theorem:</b><br>The man-proposing DA algorithm results in a stable matching that is both man-optimal and woman-pessimal.</div>
+        </p>
+        <p><div class="purpleBox">We have already shown that the outcome $X$ of the man-offering algorithm is a man-optimal stable matching. We must show that any other matching $X'$ is better for all the women whose partners have changed.Suppose that woman $w$ is matched to $m$ at $X$ and to a different man $m' \neq m$ at another stable matching $X'$. Suppose $m$ is matched to woman $w'$ in the matching $X'$. Since $X$ is man-optimal, $m$ prefers $w$ to $w'$. But since $X'$ is stable, it is not blocked by $(m, w)$, so $w$ must prefer $m'$ to $m$. $\blacksquare$ </div></p>
+
+        <h2>Matchings Better for Men than the Man-Optimal Stable One</h2>
+<p>The man-optimal stable matching is best for men <i>among stable matchings</i>, but there may be unstable matchings that all men weakly prefer and some strictly prefer.</p>
+        <p><div class="purpleBox"><b>Example:</b><br>
+    Say we have three men and two women.
+    <br><br>
+    Man Preferences:
+    <ul>
+        <li>$m_1: w_1 \succ w_2$</li>
+        <li>$m_2: w_2 \succ w_1$ </li>
+        <li>$m_3: w_1 \succ w_2$</li>
+    </ul>
+    <br>
+    Woman Preferences:
+    <ul>
+        <li>$w_1: m_2 \succ m_3 \succ m_1$</li>
+        <li>$w_2: m_1 \succ m_3 \succ m_2$</li>
+    </ul>
+    The unique stable matching is $\{(m_1, w_2), (m_2, w_2), (m_3, w_3)\}$, but <i>men</i> would be better off if $m_1$ and $m_2$ could swap partners. Lesson: Stability respects women's preferences as well as men's. The distinction will be important when we discuss school choice if we want to prioritize student preferences over school's preferences.
+</div></p>
+

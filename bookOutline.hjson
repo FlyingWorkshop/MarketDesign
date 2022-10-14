@@ -2,9 +2,7 @@
 	"intro": {
 		"title":null,
 		"sections": {
-			"notation": "Notation Reference",
-			"all_distributions":"Random Variable Reference",
-			"calculators": "Calculators",
+			"notation": "Notation Reference"
 		}
 	},
 	"part1_": {
@@ -15,118 +13,21 @@
 			"optimality": "Optimality",
 			"decentralized_market": "Decentralized Market",
 			"rural_hospitals": "Rural Hospitals Theorem",
-			"game_theory_rvw": "Game Theory Review"
+			"game_theory_rvw": "Game Theory Review",
+			"incentives_in_two_sided_matching": "Incentives in Two-Sided Matching"
 		},
 		"examples": {
 			"law_clerk":"Law Clerks",
 			"roommate_prob": "Roommate Problem"
 		}
     },
-	"part1": {
-		"title":"Part 1: Core Probability",
+    "part2_": {
+        "title":"Part 2: Housing Allocation",
 		"sections": {
-			"counting":"Counting",
-			"combinatorics":"Combinatorics",
-			"probability":"Definition of Probability",
-			"equally_likely":"Equally Likely Outcomes",
-			"prob_or":"Probability of <b>or</b>",
-			"cond_prob":"Conditional Probability",
-			"independence": "Independence",
-			"prob_and":"Probability of <b>and</b>",
-			"law_total":"Law of Total Probability",
-			"bayes_theorem":"Bayes' Theorem",
-			# "random_computers":"Randomness in Computers",
-			"log_probabilities":"Log Probabilities",
-			"many_flips":"Many Coin Flips"
-		},
-		"examples": {
-			"enigma":"Enigma Machine",
-			"serendipity":"Serendipity",
-			"bacteria_evolution":"Bacteria Evolution"
+			"rsd":"Random Serial Dictatorship",
+			"ttc": "Top Trading Cycles",
+			"core": "Core",
+			"priority_line": "Priority Line Mechanism",
 		}
-	},
-	"part2":{
-		"title":"Part 2: Random Variables",
-		"sections": {
-			"rvs":"Random Variables",
-			"pmf":"Probability Mass Functions",
-			"expectation":"Expectation",
-			"variance":"Variance",
-			"bernoulli":"Bernoulli Distribution",
-			"binomial":"Binomial Distribution",
-			"poisson":"Poisson Distribution",
-			#"geometric":"Geometric",
-			#"hyper_geo":"Hyper Geometric",
-			"continuous":"Continuous Distribution",
-			"uniform":"Uniform Distribution",
-			"exponential":"Exponential Distribution",
-			"normal":"Normal Distribution",
-			"binomial_approx":"Binomial Approximation"
-		},
-		"examples": {
-			"100_binomial_problems":"100 Binomial Problems",
-			"winning_series":"Winning Series",
-			"jury":"Jury Selection",
-			"grading_eye_inflammation":"Grading Eye Inflamation"
-			"norm_cdf_calculator":"Gaussian CDF Calculator",
-			"grades_not_normal":"Grades are Not Normal",
-			"curse_of_dimensionality":"Curse of Dimensionality"
-			"prob_baby_delivery":"Probability of Baby Delivery",
-			# "algorithmic_art":"Algorithmic Art"
-		}
-	},
-	"part3":{
-		"title":"Part 3: Probabilistic Models",
-		"sections": {
-			"joint":"Joint Probability",
-			"multinomial":"Multinomial",
-			"continuous_joint":"Continuous Joint",
-			"inference":"Inference",
-			"bayesian_networks":"Bayesian Networks",
-			"independent_vars":"Independence in Variables",
-			"correlation":"Correlation",
-			"computational_inference":"General Inference",
-		},
-		"examples": {
-			"dart_logo":"CS109 Logo",
-			"fairness":"Fairness in AI",
-			"federalist":"Federalist Paper Authorship",
-			"name2age":"Name to Age",
-			"bridge_distribution":"Bridge Distribution",
-			"tracking_in_2D":"Tracking in 2D"
-
-		}
-	},
-	"part4":{
-		"title":"Part 4: Uncertainty Theory",
-		"sections": {
-			"beta":"Beta Distribution",
-			"summation_vars":"Adding Random Variables",
-			"clt":"Central Limit Theorem",
-			"samples":"Sampling",
-			"bootstrapping":"Bootstrapping",
-			#"parameters":"Uncertainty in Parameters",
-			"algorithmic_analysis":"Algorithmic Analysis",
-			#"bounds":"Probability Bounds"
-		},
-		"examples": {
-			"thompson":"Thompson Sampling",
-			"p_hacking":"P-Hacking"
-		}
-	},
-	"part5":{
-		"title":"Part 5: Machine Learning",
-		"sections": {
-			"parameter_estimation":"Parameter Estimation",
-			"mle":"Maximum Likelihood Estimation",
-			"map":"Maximum A Posteriori",
-			"machine_learning":"Machine Learning",
-			"naive_bayes":"Naïve Bayes",
-			"log_regression":"Logistic Regression"
-		},
-		"examples": {
-			"mle_demo":"MLE Normal Demo",
-			"mixture_models":"MLE Mixture Model",
-		}
-	}
+    }
 }
